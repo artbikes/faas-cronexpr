@@ -1,0 +1,9 @@
+provider:  
+  name: faas
+  gateway: http://localhost:31112
+  network: "func_functions" # this is optional and defaults to func_functions
+
+functions:  
+  func_cronexpr:
+    image: artbikes/cronexpr
+    fprocess: cronexpr
